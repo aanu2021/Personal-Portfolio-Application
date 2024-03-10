@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Project</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#" id="run-tests-btn" class="btn btn-show-all" target="_blank">Run Tests</a>
+            </li>
+        </ul>
+    </nav> 
+
+    <!-- END NAV -->
+
+    <div id="validation-results" style="font-size : 20px; color: white;"></div>
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+        <h1>Hey I am Anumoy</h1>
+        <p>a full-stack web developer</p>
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+
+        <div class="projects-grid">
+            <a href="https://github.com/aanu2021/Instagram-Clone-MERN" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/social_media_application.webp" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Social Media Application
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://github.com/aanu2021/Food-Delivery-App-MERN-stack-project-" target="_blank"
+                class="project project-tile">
+                <img class="project-image" src="images/food_ordering_application.png" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Food Ordering Application
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://github.com/aanu2021/Product-Listing-Application-" target="_blank"
+                class="project project-tile">
+                <img class="project-image" src="images/product_listing_application.jpg" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Product Listing Application
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://github.com/aanu2021/TechBlog" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/tech_blog_application.jpeg" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Technical Blog Website
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://github.com/aanu2021/Tic-Tac-Toe" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/tic_tac_toe.png" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tic Tac Toe Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://github.com/aanu2021/Snake-Game-" target="_blank" class="project project-tile">
+                <img class="project-image" src="images/snake_game.jpg" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Snake Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+
+        <!-- <a href="https://github.com/aanu2021?tab=repositories" class="btn btn-show-all" target="_blank">Show all<i -->
+        class="fas fa-chevron-right"></i></a>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's work together...</h2>
+        </div>
+        <div class="contact-links">
+            <a href="https://www.facebook.com/anumoy.nandy.71/" target="_blank" class="btn contact-details"><i
+                    class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/aanu2021" target="_blank" class="btn contact-details"><i
+                    class="fab fa-github"></i> GitHub</a>
+            <a href="#" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="mailto:anumoynandyanunan2021@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send
+                a mail</a>
+            <a href="tel:7439192064" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+        <p>
+            &copy; Created for
+            <a href="https://www.linkedin.com/in/anumoy-nandy-9b527b204/" target="_blank">&nbsp;&nbsp;<i
+                    class="fa fa-user fa-2x"></i> &nbsp;&nbsp;<span class="footer-text">aanu2021</span> </a>
+        </p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+    <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const validationResults = document.getElementById('validation-results');
+        const runTestsButton = document.getElementById('run-tests-btn');
+
+        runTestsButton.addEventListener('click', function () {
+            runTests(validationResults);
+        });
+
+        function runTests(validationResults) {
+            let errorCount = 0;
+            let testResults = '';
+
+            // 1. Check for the Welcome section with an id of welcome-section
+            const welcomeSection = document.getElementById('welcome-section');
+            if (!welcomeSection) {
+                testResults += 'Error: Your portfolio should have a "Welcome" section with an id of welcome-section !\n';
+                errorCount++;
+            }
+            else {
+                // 2. Check if #welcome-section contains an h1 element
+                const welcomeHeading = welcomeSection.querySelector('h1');
+                if (!welcomeHeading) {
+                    testResults += 'Error: Your #welcome-section element should contain an h1 element !\n';
+                    errorCount++;
+                }
+                else {
+                    // 3. Check for empty h1 elements within #welcome-section element
+                    if (welcomeHeading.innerText.trim() === '') {
+                        testResults += 'Error: You should not have any empty h1 elements within #welcome-section element !\n';
+                        errorCount++;
+                    }
+                }
+            }
+
+            // 4. Check for Projects section with an id of projects
+            const projectsSection = document.getElementById('projects');
+            if (!projectsSection) {
+                testResults += 'Error: You should have a "Projects" section with an id of projects !\n';
+                errorCount++;
+            }
+
+            // 5. Check if portfolio contains at least one element with a class of project-tile
+            const projectTiles = document.querySelectorAll('.project-title');
+            if (projectTiles.length === 0) {
+                testResults += 'Error: Your portfolio should contain at least one element with a class of project-title !\n';
+                errorCount++;
+            }
+
+            if (projectsSection) {
+                // 6. Check if #projects element contains at least one a element
+                const projectLinks = projectsSection.querySelectorAll('a');
+                if (projectLinks.length === 0) {
+                    testResults += 'Error: Your #projects element should contain at least one a element !\n';
+                    errorCount++;
+                }
+            }
+
+            // 7. Check for navbar with an id of navbar
+            const navbar = document.getElementById('navbar');
+            if (!navbar) {
+                testResults += 'Error: Your portfolio should have a navbar with an id of navbar !\n';
+                errorCount++;
+            }
+            else {
+                // 8. Check if #navbar element contains at least one a element whose href attribute starts with #
+                const navbarLinks = navbar.querySelectorAll('a[href^="#"]');
+                if (navbarLinks.length === 0) {
+                    testResults += 'Error: Your #navbar element should contain at least one a element whose href attribute starts with # !\n';
+                    errorCount++;
+                }
+            }
+
+            // 9. Check for an a element with an id of profile-link
+            const profileLink = document.getElementById('profile-link');
+            if (!profileLink) {
+                testResults += 'Error: Your portfolio should have an a element with an id of profile-link!\n';
+                errorCount++;
+            }
+            else {
+                // 10. Check if #profile-link element has a target attribute of _blank
+                if (profileLink.getAttribute('target') !== '_blank') {
+                    testResults += 'Error: Your #profile-link element should have a target attribute of _blank !\n';
+                    errorCount++;
+                }
+            }
+
+            // 11. Check if portfolio uses at least one media query
+            const stylesheets = document.styleSheets;
+            let hasMediaQuery = false;
+            for (let i = 0; i < stylesheets.length; i++) {
+                const stylesheet = stylesheets[i];
+                const rules = stylesheet.cssRules || stylesheet.rules;
+                for (let j = 0; j < rules.length; j++) {
+                    const rule = rules[j];
+                    if (rule.type === CSSRule.MEDIA_RULE) {
+                        hasMediaQuery = true;
+                        break;
+                    }
+                }
+                if (hasMediaQuery) {
+                    break;
+                }
+            }
+            if (!hasMediaQuery) {
+                testResults += 'Error: Your portfolio should use at least one media query !\n';
+                errorCount++;
+            }
+
+            // 12. Check if #navbar element is always at the top of the viewport
+            if (navbar) {
+                const navbarRect = navbar.getBoundingClientRect();
+                if (navbarRect.top !== 0) {
+                    testResults += 'Error: Your #navbar element should always be at the top of the viewport !\n';
+                    errorCount++;
+                }
+            }
+
+            // Display overall validation result
+            if (errorCount === 0) {
+                testResults += 'All checks passed. Portfolio validation complete.\n';
+            } else {
+                testResults += 'Validation completed with ' + errorCount + ' error(s).\n';
+            }
+
+            // Output test results to the validation-results div
+            validationResults.textContent = testResults;
+
+            // Generate text file with test results
+            const blob = new Blob([testResults], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'portfolio_validation_results.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    });
+</script>
+
+</html>
